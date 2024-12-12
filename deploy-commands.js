@@ -1,5 +1,6 @@
 const { REST, Routes } = require('discord.js');
-const token = 'REDACTED';
+require('dotenv').config(); 
+const token = process.env.DISCORD_TOKEN;
 const clientId = '1315958557488709724';
 const guildId = '1157509654562222164'; // Use your Discord server (guild) ID here
 

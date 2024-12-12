@@ -5,8 +5,8 @@ const { Client, GatewayIntentBits } = require('discord.js');
 // Define the client
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-const token = 'REDACTED'; // Replace with your bot token
-
+require('dotenv').config(); 
+const token = process.env.DISCORD_TOKEN;
 // File to store scores
 const SCORES_FILE = path.join(__dirname, 'scores.json');
 
